@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="625.0" prefWidth="443.0" stylesheets="@../CSS_Resources/ZStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MatchPlay.selectBowler">
+   <children>
+      <Label fx:id="Bowler" alignment="CENTER" layoutX="28.0" layoutY="26.0" prefHeight="69.0" prefWidth="387.0" stylesheets="@../CSS_Resources/ZSqureBlueLabel.css" text="Select Next Bowler">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <TableView fx:id="bowl_table" layoutX="28.0" layoutY="107.0" prefHeight="429.0" prefWidth="387.0" stylesheets="@../CSS_Resources/ZTable.css">
+         <columns>
+            <TableColumn fx:id="PlayerID_col_bowl" prefWidth="76.0" text="PlayerID" />
+            <TableColumn fx:id="Name_col_bowl" prefWidth="310.0" text="Name" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="OK_bt" layoutX="28.0" layoutY="545.0" prefHeight="55.0" prefWidth="387.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZsaveBtn.css" text="OK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

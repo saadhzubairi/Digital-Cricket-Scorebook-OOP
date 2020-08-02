@@ -1,0 +1,69 @@
+.root {
+    -fx-background-color: linear-gradient(#001a2f, #1e1e1e);
+    -fx-text-fill: white;
+    -fx-font-family: "HelvLight";
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.jfx-text-field{
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: gray;
+}
+
+.jfx-button{
+    -fx-background-color: linear-gradient(#0cb4e8, #01587d);
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+}
+
+.jfx-button:hover{
+    -fx-background-color: linear-gradient(#0083ff, #045292);
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+.tab
+{
+    -fx-background-insets: 0 1 0 1,0,0;
+    -fx-background-radius: 0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #01579B;
+}
+.tab-pane .tab:selected
+{
+    -fx-background-color: #29b6f6;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+
+}
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+}
+
+.jfx-combo-box {
+    -fx-text-inner-color: white;
+    -fx-prompt-text-fill: white;
+}
+.jfx-combo-box .cell {
+    -fx-background-color: #202020;
+    -fx-text-fill: white;
+}
+.jfx-combo-box:hover {
+    -fx-background-color: #006caa;
+    -fx-text-fill: white;
+}

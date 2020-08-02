@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="719.0" prefWidth="645.0" stylesheets="@../CSS_Resources/ZStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MatchPlay.NewBall">
+   <children>
+      <Label alignment="CENTER" layoutX="49.0" layoutY="32.0" prefHeight="80.0" prefWidth="546.0" stylesheets="@../CSS_Resources/ZHeadLabel.css" text="New Ball">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <HBox layoutX="49.0" layoutY="197.0" prefHeight="80.0" prefWidth="546.0" spacing="15.0">
+         <children>
+            <JFXButton fx:id="run_0" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/0.css" text="0">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="run_1" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/1.css" text="1">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="run_2" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/2.css" text="2">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="run_3" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/3.css" text="3">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="run_4" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/4.css" text="4">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="run_6" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/6.css" text="6">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox layoutX="49.0" layoutY="297.0" prefHeight="80.0" prefWidth="546.0" spacing="15.0">
+         <children>
+            <JFXButton fx:id="ball_wide" prefHeight="80.0" prefWidth="102.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/wide.css" text="Wide">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ball_no" prefHeight="80.0" prefWidth="104.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/nball.css" text="No-Ball">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ball_runout" prefHeight="80.0" prefWidth="123.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/runout.css" text="Run-out">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ball_catch" prefHeight="80.0" prefWidth="94.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/catch.css" text="Catch">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ball_wicket" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/wicket.css" text="W">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <JFXButton fx:id="newball_ok" layoutX="319.0" layoutY="591.0" prefHeight="70.0" prefWidth="272.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZsaveBtn.css" text="OK">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="newball_cancel" layoutX="45.0" layoutY="591.0" prefHeight="70.0" prefWidth="280.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZtitleBar.css" text="Cancel">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+      <HBox layoutX="-1.0" layoutY="678.0" prefHeight="41.0" prefWidth="645.0" styleClass="hbox" stylesheets="@../CSS_Resources/ZtitleBar.css">
+         <children>
+            <Label fx:id="bottom_label" alignment="CENTER" prefHeight="109.0" prefWidth="834.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="50.0" layoutY="472.0" prefHeight="80.0" prefWidth="546.0" spacing="15.0">
+         <children>
+            <JFXButton fx:id="e1" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/z1.css" text="1">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="e2" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/z2.css" text="2">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="e3" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/z3.css" text="3">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="e4" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/z4.css" text="4">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="e5" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/z5.css" text="5">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="e6" prefHeight="80.0" prefWidth="80.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/z6.css" text="6">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="51.0" layoutY="407.0" prefHeight="32.0" prefWidth="534.0" text="Extras / LBs / Over Throws">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="55.0" layoutY="139.0" prefHeight="32.0" prefWidth="534.0" text="Striker's Runs">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

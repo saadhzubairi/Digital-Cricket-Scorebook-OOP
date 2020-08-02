@@ -1,0 +1,28 @@
+.root {
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+    -fx-font-family: HelvLight;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-font-family: HelvLight;
+    -fx-text-fill: white;
+}
+
+.jfx-button{
+    -fx-background-color: rgba(30, 144, 255, 0.47);
+    -fx-text-fill: white;
+    -fx-background-radius: 100;
+    -fx-font-size: inherit;
+}
+
+.jfx-button:hover{
+    -fx-background-color: #1e90ff;
+    -fx-text-fill: white;
+    -fx-background-radius: 100;
+}
+
+.jfx-tree-view{
+    -fx-background-color: aquamarine;
+}

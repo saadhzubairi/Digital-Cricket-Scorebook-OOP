@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="643.0" prefWidth="599.0" stylesheets="@../CSS_Resources/ZStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MatchToss.TossController">
+   <children>
+      <Label alignment="CENTER" layoutX="31.0" layoutY="17.0" prefHeight="60.0" prefWidth="542.0" stylesheets="@../CSS_Resources/ZHeadLabel.css" text="Toss">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="t1_label" alignment="CENTER" layoutX="29.0" layoutY="97.0" prefHeight="38.0" prefWidth="200.0" stylesheets="@../CSS_Resources/ZHeadLabel.css" text="Team 1">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <JFXButton fx:id="t1head_bt" layoutX="34.0" layoutY="155.0" prefHeight="40.0" prefWidth="95.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZPurpleButton.css" text="Heads">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="t1tail_bt" layoutX="129.0" layoutY="155.0" prefHeight="40.0" prefWidth="95.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZPurpleButton2.css" text="Tails">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <Label fx:id="t2_label" alignment="CENTER" layoutX="371.0" layoutY="97.0" prefHeight="38.0" prefWidth="200.0" stylesheets="@../CSS_Resources/ZHeadLabel.css" text="Team 1">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <JFXButton fx:id="t2head_bt" layoutX="374.0" layoutY="155.0" prefHeight="40.0" prefWidth="95.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZPurpleButton.css" text="Heads">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="t2tail_bt" layoutX="469.0" layoutY="155.0" prefHeight="40.0" prefWidth="95.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZPurpleButton2.css" text="Tails">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="FLIP_BT" layoutX="66.0" layoutY="279.0" prefHeight="87.0" prefWidth="111.0" text="Flip!">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="IMG_VIEW" fitHeight="200.0" fitWidth="200.0" layoutX="202.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../coins/coin.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="TOSS_RESULT_LABEL" alignment="CENTER" layoutX="428.0" layoutY="280.0" prefHeight="87.0" prefWidth="111.0" stylesheets="@../CSS_Resources/ZHeadLabel.css" text="___">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutY="605.0" prefHeight="38.0" prefWidth="606.0" styleClass="hbox" stylesheets="@../CSS_Resources/ZtitleBar.css">
+         <children>
+            <Label fx:id="bottom_label" alignment="CENTER" prefHeight="38.0" prefWidth="639.0" />
+         </children>
+      </HBox>
+      <JFXButton fx:id="t1_bat_bt" layoutX="30.0" layoutY="445.0" prefHeight="60.0" prefWidth="130.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZyellowButton.css" text="Batting">
+         <font>
+            <Font size="24.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="t1_bowl_bt" layoutX="160.0" layoutY="445.0" prefHeight="60.0" prefWidth="130.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZyellowButton2.css" text="Bowling">
+         <font>
+            <Font size="24.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="t2_bat_bt" layoutX="312.0" layoutY="445.0" prefHeight="60.0" prefWidth="130.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZyellowButton.css" text="Batting">
+         <font>
+            <Font size="24.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="t2_bowl_bt" layoutX="442.0" layoutY="445.0" prefHeight="60.0" prefWidth="130.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZyellowButton2.css" text="Bowling">
+         <font>
+            <Font size="24.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="CANCEL" layoutX="29.0" layoutY="526.0" onAction="#closeButtonAction" prefHeight="60.0" prefWidth="260.0" stylesheets="@../CSS_Resources/ZtitleBar.css" text="Cancel">
+         <font>
+            <Font size="27.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="BEGIN" layoutX="311.0" layoutY="526.0" prefHeight="60.0" prefWidth="260.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZsaveBtn.css" text="Begin Play">
+         <font>
+            <Font size="27.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

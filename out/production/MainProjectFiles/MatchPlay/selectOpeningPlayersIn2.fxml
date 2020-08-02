@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="773.0" prefWidth="909.0" stylesheets="@../CSS_Resources/ZStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MatchPlay.selectOpeningPlayersIn2">
+   <children>
+      <Label alignment="CENTER" layoutY="21.0" prefHeight="69.0" prefWidth="910.0" stylesheets="@../CSS_Resources/ZLABEL3.css" text="Select Opening Performers">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="Striker" alignment="CENTER" layoutX="67.0" layoutY="122.0" prefHeight="69.0" prefWidth="355.0" stylesheets="@../CSS_Resources/ZLABEL7.css" text="Striker">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="Bowler" alignment="CENTER" layoutX="488.0" layoutY="122.0" prefHeight="69.0" prefWidth="355.0" stylesheets="@../CSS_Resources/ZLABEL8.css" text="Bowler">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="Runner" alignment="CENTER" layoutX="67.0" layoutY="380.0" prefHeight="69.0" prefWidth="355.0" stylesheets="@../CSS_Resources/ZLABEL6.css" text="Runner">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <TableView fx:id="bat1_table" layoutX="67.0" layoutY="200.0" prefHeight="165.0" prefWidth="355.0" stylesheets="@../CSS_Resources/ZTable.css">
+         <columns>
+            <TableColumn fx:id="PlayerID_col_bt1" prefWidth="76.0" text="Player ID" />
+            <TableColumn fx:id="Name_col_bt1" prefWidth="278.0" text="Name" />
+         </columns>
+      </TableView>
+      <TableView fx:id="bat2_table" layoutX="67.0" layoutY="456.0" prefHeight="165.0" prefWidth="355.0" stylesheets="@../CSS_Resources/ZTable.css">
+         <columns>
+            <TableColumn fx:id="PlayerID_col1_bt2" prefWidth="76.0" text="PlayerID" />
+            <TableColumn fx:id="Name_col1_bt2" prefWidth="278.0" text="Name" />
+         </columns>
+      </TableView>
+      <TableView fx:id="bowl_table" layoutX="488.0" layoutY="198.0" prefHeight="429.0" prefWidth="355.0" stylesheets="@../CSS_Resources/ZTable.css">
+         <columns>
+            <TableColumn fx:id="PlayerID_col2_bowl" prefWidth="76.0" text="PlayerID" />
+            <TableColumn fx:id="Name_col2_bowl" prefWidth="278.0" text="Name" />
+         </columns>
+      </TableView>
+      <HBox layoutX="167.0" layoutY="666.0" prefHeight="55.0" prefWidth="576.0">
+         <children>
+            <JFXButton fx:id="OK_bt" prefHeight="55.0" prefWidth="576.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZsaveBtn.css" text="OK">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <HBox layoutY="746.0" prefHeight="27.0" prefWidth="910.0" styleClass="hbox" stylesheets="@../CSS_Resources/ZtitleBar.css">
+         <children>
+            <Label fx:id="bottom_label" alignment="CENTER" prefHeight="27.0" prefWidth="919.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

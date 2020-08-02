@@ -1,0 +1,7 @@
+.label {
+    -fx-font-family: HelvLight;
+    -fx-text-fill: white;
+    -fx-background-color: dodgerblue;
+    -fx-background-radius: 100;
+    -fx-font-weight: 300;
+}

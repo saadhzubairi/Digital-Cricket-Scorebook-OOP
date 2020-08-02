@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="590.0" prefWidth="804.0" stylesheets="@../CSS_Resources/ZStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MatchPlay.BATSTAT">
+   <children>
+      <Label alignment="CENTER" layoutX="128.0" layoutY="20.0" prefHeight="68.0" prefWidth="549.0" stylesheets="@../CSS_Resources/ZHeadLabel.css" text="Batting Statistics">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <TableView fx:id="bat1_table" layoutX="28.0" layoutY="108.0" prefHeight="416.0" prefWidth="748.0" stylesheets="@../CSS_Resources/ZTable.css">
+         <columns>
+            <TableColumn fx:id="ID_col" prefWidth="64.0" text="Player ID" />
+            <TableColumn fx:id="Name_col" prefWidth="326.0" text="Name" />
+            <TableColumn fx:id="Rims_col" minWidth="0.0" prefWidth="74.0" text="Runs" />
+            <TableColumn fx:id="Balls_col" minWidth="62.0" prefWidth="73.0" text="Balls" />
+            <TableColumn fx:id="fours_col" minWidth="51.0" prefWidth="73.0" text="4s" />
+            <TableColumn fx:id="sixes_col" minWidth="64.0" prefWidth="70.0" text="6s" />
+            <TableColumn fx:id="sr_col" minWidth="67.0" prefWidth="70.0" text="S/R" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="closer" layoutX="388.0" layoutY="551.0" prefHeight="25.0" prefWidth="29.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/wicket.css" text="X" />
+   </children>
+</AnchorPane>

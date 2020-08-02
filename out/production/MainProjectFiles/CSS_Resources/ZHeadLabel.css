@@ -1,0 +1,8 @@
+.label {
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(#00aac8, #2885d4);
+    -fx-background-radius: 20;
+    -fx-font-weight: 300;
+    -fx-font-family: "Berlin Sans FB";
+}
+

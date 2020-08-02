@@ -1,0 +1,13 @@
+.hbox{
+    -fx-background-color: #263238;
+}
+
+.jfx-button{
+    -fx-background-color: linear-gradient(#cd0101, maroon);
+    -fx-background-radius: 0;
+}
+
+.jfx-button:hover{
+    -fx-background-color: linear-gradient(#ff0000, #c40000);
+    -fx-background-radius: 0;
+}

@@ -1,0 +1,4 @@
+.label{
+    -fx-background-color: linear-gradient(#004d40, #002823);
+    -fx-prompt-text-fill: azure;
+}

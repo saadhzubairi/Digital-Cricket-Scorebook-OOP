@@ -1,0 +1,5 @@
+.label{
+    -fx-background-color: dodgerblue;
+    -fx-prompt-text-fill: azure;
+    -fx-animated: true;
+}

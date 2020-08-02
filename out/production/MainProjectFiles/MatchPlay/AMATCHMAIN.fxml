@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="928.0" prefWidth="950.0" stylesheets="@../CSS_Resources/ZStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MatchPlay.AMATCHMAIN">
+   <children>
+      <Label fx:id="TEAM1_vs_TEAM2" alignment="CENTER" layoutX="117.0" layoutY="28.0" prefHeight="77.0" prefWidth="720.0" stylesheets="@../CSS_Resources/ZHeadLabel.css" text="TEAM 1 VS TEAM 2" textAlignment="CENTER">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
+      <HBox layoutX="132.0" layoutY="126.0" prefHeight="85.0" prefWidth="691.0">
+         <children>
+            <Label fx:id="battm_label" prefHeight="85.0" prefWidth="240.0" stylesheets="@../CSS_Resources/ZLABEL1.css" text="BAT TEAM">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label fx:id="Match_Stat_label" alignment="CENTER" prefHeight="85.0" prefWidth="265.0" stylesheets="@../CSS_Resources/ZLABEL2.css" text="MATCH STAT">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="Over_label" alignment="CENTER" prefHeight="85.0" prefWidth="224.0" stylesheets="@../CSS_Resources/ZLABEL3.css" text="OVER">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <GridPane layoutX="87.0" layoutY="245.0" prefHeight="155.0" prefWidth="777.0" stylesheets="@../CSS_Resources/ZtitleBar.css">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="552.0" minWidth="10.0" prefWidth="103.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="552.0" minWidth="10.0" prefWidth="328.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1026.0" minWidth="10.0" prefWidth="246.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="1026.0" minWidth="10.0" prefWidth="132.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="batsman1_label" prefHeight="74.0" prefWidth="320.0" stylesheets="@../CSS_Resources/ZLABEL5.css" text="Batsman 1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding></Label>
+            <Label fx:id="batsman2_label" prefHeight="39.0" prefWidth="360.0" stylesheets="@../CSS_Resources/ZLABEL5.css" text="Batsman 2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding></Label>
+            <Label fx:id="batsman1runs_label" prefHeight="50.0" prefWidth="632.0" stylesheets="@../CSS_Resources/ZLABEL6.css" text="Runs (balls)" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding></Label>
+            <Label fx:id="batsman2runs_label" layoutX="178.0" layoutY="10.0" prefHeight="64.0" prefWidth="614.0" stylesheets="@../CSS_Resources/ZLABEL6.css" text="Runs (balls)" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding></Label>
+            <Label fx:id="sr1_label" prefHeight="36.0" prefWidth="302.0" stylesheets="@../CSS_Resources/ZLABEL7.css" text="S/R" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding></Label>
+            <Label fx:id="sr2_label" layoutX="792.0" layoutY="10.0" prefHeight="50.0" prefWidth="305.0" stylesheets="@../CSS_Resources/ZLABEL7.css" text="S/R" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding></Label>
+            <Label fx:id="inat1_label" layoutX="86.0" layoutY="10.0" prefHeight="87.0" prefWidth="168.0" stylesheets="@../CSS_Resources/ZLABEL4.css" text="In At" GridPane.rowIndex="1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <Label fx:id="inat2_label" layoutX="86.0" layoutY="60.0" prefHeight="122.0" prefWidth="168.0" stylesheets="@../CSS_Resources/ZLABEL4.css" text="In At" GridPane.rowIndex="3">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" prefHeight="90.0" prefWidth="95.0" stylesheets="@../CSS_Resources/ZLABEL8.css" text="Striker">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="94.0" prefWidth="95.0" stylesheets="@../CSS_Resources/ZLABEL8.css" text="Runner" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Batsman" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Runs (balls)" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Strike Rate" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="135.0" layoutY="21.0" text="Batsman" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="455.0" layoutY="21.0" text="Runs (balls)" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <Label layoutX="693.0" layoutY="21.0" text="Strike Rate" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+      <JFXButton fx:id="NEWBALL_bt" layoutX="391.0" layoutY="596.0" prefHeight="169.0" prefWidth="183.0" styleClass="fx-button" stylesheets="@../CSS_Resources/Ztranks.css" text=".">
+         <graphic>
+            <ImageView fitHeight="156.0" fitWidth="166.0">
+               <image>
+                  <Image url="@../coins/ball.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="bowling_stats_bt" layoutX="89.0" layoutY="650.0" prefHeight="62.0" prefWidth="259.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZPurpleButton2.css" text="View Bowling Stats">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0">
+               <image>
+                  <Image url="@../coins/bowl.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="batting_stats_bt" layoutX="607.0" layoutY="650.0" prefHeight="62.0" prefWidth="259.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZPurpleButton2.css" text="View Batting Stats">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0">
+               <image>
+                  <Image url="@../coins/bat.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <HBox layoutX="87.0" layoutY="500.0" prefHeight="41.0" prefWidth="777.0">
+         <children>
+            <Label fx:id="bowler_label" prefHeight="41.0" prefWidth="259.0" stylesheets="@../CSS_Resources/ZLABEL4.css" text="Bowler">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <Label fx:id="bowler_overs_label" prefHeight="41.0" prefWidth="176.0" stylesheets="@../CSS_Resources/ZLABEL5.css" text="Overs">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <Label fx:id="bowler_runs_label" prefHeight="41.0" prefWidth="219.0" stylesheets="@../CSS_Resources/ZLABEL6.css" text="Runs">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+            <Label fx:id="bowler_economy_label" prefHeight="41.0" prefWidth="123.0" stylesheets="@../CSS_Resources/ZLABEL7.css" text="Economy">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="88.0" layoutY="464.0" prefHeight="36.0" prefWidth="95.0" stylesheets="@../CSS_Resources/ZLABEL8.css" text="Bowler">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="start_nexti_bt" layoutX="318.0" layoutY="789.0" prefHeight="68.0" prefWidth="336.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZyellowButton.css" text="Start Next Innings">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="crossing_btn" layoutX="740.0" layoutY="408.0" prefHeight="36.0" prefWidth="124.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZCrossingbt.css" text="Crossing">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0">
+               <image>
+                  <Image url="@../coins/cross.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="chngbowler_btn" layoutX="740.0" layoutY="549.0" prefHeight="36.0" prefWidth="124.0" styleClass="fx-button" stylesheets="@../CSS_Resources/ZCrossingbt.css" text="Change Bowler">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0">
+               <image>
+                  <Image url="@../coins/bowling.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <HBox layoutY="895.0" prefHeight="36.0" prefWidth="950.0">
+         <children>
+            <Label fx:id="bottom_label" alignment="CENTER" prefHeight="64.0" prefWidth="950.0" styleClass="hbox" stylesheets="@../CSS_Resources/ZtitleBar.css">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

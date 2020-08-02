@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="651.0" prefWidth="443.0" stylesheets="@../CSS_Resources/ZStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MatchPlay.selectBatsman">
+   <children>
+      <Label fx:id="Striker" alignment="CENTER" layoutX="28.0" layoutY="27.0" prefHeight="69.0" prefWidth="387.0" stylesheets="@../CSS_Resources/ZSqureBlueLabel.css" text="Select Next Batsman">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <TableView fx:id="bat1_table" layoutX="28.0" layoutY="109.0" prefHeight="416.0" prefWidth="387.0" stylesheets="@../CSS_Resources/ZTable.css">
+         <columns>
+            <TableColumn fx:id="PlayerID_col_bt1" prefWidth="76.0" text="Player ID" />
+            <TableColumn fx:id="Name_col_bt1" prefWidth="310.0" text="Name" />
+         </columns>
+      </TableView>
+      <HBox layoutX="28.0" layoutY="569.0" prefHeight="58.0" prefWidth="387.0">
+         <children>
+            <JFXButton fx:id="striker_bt" prefHeight="61.0" prefWidth="248.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/bat1.css" text="Batsman 1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="runner_bt" layoutX="10.0" layoutY="10.0" prefHeight="61.0" prefWidth="248.0" styleClass="fx-button" stylesheets="@../CSS_Buttons/bat2.css" text="Batsman 2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="538.0" prefHeight="31.0" prefWidth="387.0" stylesheets="@../CSS_Resources/ZLABEL8.css" text="Select Batsman to replace" />
+   </children>
+</AnchorPane>
